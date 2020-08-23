@@ -4,6 +4,7 @@ date: 2018-04-16 19:09:16
 tags: 
   - 题解
 ---
+
 [LuoguT27521](https://www.luogu.org/problemnew/show/T27521):
 
 简单的题？非也非也。

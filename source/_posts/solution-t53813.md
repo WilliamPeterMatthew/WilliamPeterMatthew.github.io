@@ -4,6 +4,7 @@ date: 2018-10-26 18:54:38
 tags: 
   - 题解
 ---
+
 [LuoguT53813](https://www.luogu.org/problemnew/show/T53813):
 
 题意是在说：每次比较被机惨的两个人的话的长度。  

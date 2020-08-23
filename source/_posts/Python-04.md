@@ -4,6 +4,7 @@ date: 2019-02-15 08:24:00
 tags: 
   - Python入门
 ---
+
 在上一期的末尾我们说到一段代码
 ```python
 # -*- coding: utf-8 -*-
@@ -26,7 +27,7 @@ Lisa!'''
 但是明显中文一个字节肯定不够用，起码也要两个字节，而且不能与ASCII编码冲突，于是中国便制定了`GB2312`编码，用来把中文编进去。  
 你可以想到的是，全世界有上百种语言，日本把日文编到`Shift-JIS`编码里，韩国把韩文编到`EUC-KR`编码里，甚至中文的繁体字都采用另一种编码`Big5`。各国有各国的标准，就会不可避免的产生冲突，结果就是，在多语言的文本中，会出现乱码。
 
-![字符编码的问题真是令人头疼！](https://res.zhangkai.xin/pic/Python04-01.png)
+![字符编码的问题真是令人头疼！](/pic/Python04-01.png)
 
 因此，`Unicode`应运而生，Unicode把所有语言统一到一套编码，这样就不会再出现乱码问题了。  
 Unicode标准不断地在发展，最常用地是用两个字节表示一个字符（偏僻字符需要4个字节）。现代的操作系统和大多数编程语言都直接支持Unicode。  
@@ -52,11 +53,11 @@ Unicode标准不断地在发展，最常用地是用两个字节表示一个字�
 在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者传输的时候，就转换为UTF-8编码。  
 用记事本编辑的时候，从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件：
 
-![](https://res.zhangkai.xin/pic/Python04-02.png)
+![](/pic/Python04-02.png)
 
 浏览网页时，服务器会把动态生成的Unicode内容转换为UTF-8再传输到浏览器：
 
-![](https://res.zhangkai.xin/pic/Python04-03.png)
+![](/pic/Python04-03.png)
 
 所以你看到很多网页的源码上会有类似`<meta charset="UTF-8" />`的信息，表示该网页正是用的UTF-8编码。
 
@@ -165,11 +166,11 @@ len()函数计算的是str的字符数，如果换成bytes，len()就计算字�
 
 申明了UTF-8编码并不意味着你的.py文件就是UTF-8编码的，必须并且要确保文本编辑器正在使用UTF-8 without BOM编码：
 
-![](https://res.zhangkai.xin/pic/Python04-04.png)
+![](/pic/Python04-04.png)
 
 如果.py文件本身使用UTF-8编码，并且也申明了`# -*- coding: utf-8 -*-`，打开命令提示符测试就可以正常显示中文：
 
-![](https://res.zhangkai.xin/pic/Python04-05.png)
+![](/pic/Python04-05.png)
 
 ## 格式化
 最后一个常见的问题是如何输出格式化的字符串。我们经常会输出类似`'亲爱的xxx你好！你xx月的话费是xx，余额是xx'`之类的字符串，而xxx的内容都是根据变量变化的，所以，需要一种简便的格式化字符串的方式。
@@ -260,8 +261,8 @@ else:
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

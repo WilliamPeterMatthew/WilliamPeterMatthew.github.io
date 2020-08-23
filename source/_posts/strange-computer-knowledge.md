@@ -4,6 +4,7 @@ date: 2018-09-03 19:07:10
 tags: 
   - 不知道什么东西
 ---
+
 # 时间复杂度符号
 - Θ，读音：theta、西塔；既是上界也是下界(tight)，等于的意思。
 - Ο，读音：big-oh、欧米可荣（大写）；表示上界(tightness unknown)，小于等于的意思。
@@ -654,8 +655,8 @@ int tolower(a)//当字符a是大写字母时,改为小写,其余情况不变
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

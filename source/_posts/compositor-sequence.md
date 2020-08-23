@@ -4,6 +4,7 @@ date: 2018-10-09 20:00:10
 tags: 
   - 算法
 ---
+
 # 插入排序
 插入排序分为直接插入排序、二分插入排序、二路插入排序、表插入排序和希尔插入排序。
 ## 直接插入排序
@@ -492,8 +493,8 @@ void MergeSort_SIM(int *sq,int length)
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

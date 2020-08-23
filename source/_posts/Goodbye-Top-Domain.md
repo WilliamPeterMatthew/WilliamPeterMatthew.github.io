@@ -4,10 +4,11 @@ date: 2019-01-29 20:14:57
 tags: 
   - 科技
 ---
+
 # 0x00 引言
 作为学生党的我们，总想在微机课上跨越老师的控制走向那万千互联网，可这时一款名为极域的软件就阻挡了我们，我们的电脑屏幕竟然在这款软件的监控之下，而且更气的是，当我们打开了任务管理器，试图结束掉它时，它提示我们
 
-![拒绝访问](https://res.zhangkai.xin/pic/GBTD1.png)  
+![拒绝访问](/pic/GBTD1.png)  
 拒绝访问
 
 如果说我能直接结束掉它也行，但是这**拒绝访问**四个字激怒了我，作为官封的学校机房管理员，我简直无法容忍。
@@ -19,7 +20,7 @@ tags:
 ntsd -c q -pn StudentMain.exe
 ```
 
-![](https://res.zhangkai.xin/pic/GBTD2.png)
+![](/pic/GBTD2.png)
 
 我嘞个乖乖，这个暴力工具一上，直接秒掉啊有木有
 
@@ -31,13 +32,13 @@ ntsd -c q -pn StudentMain.exe
 计算机\HKEY_LOCAL_MACHINE\SOFTWARE\TopDomain\e-Learning Class\Student
 计算机\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TopDomain\e-Learning Class\Student
 ```
-![](https://res.zhangkai.xin/pic/GBTD3.png)
+![](/pic/GBTD3.png)
 
 找到 PreventKill ，并双击打开将值从1改为0，然后点选确定保存。  
-![](https://res.zhangkai.xin/pic/GBTD4.png)
+![](/pic/GBTD4.png)
 
 这时候我们打开任务管理器，尝试结束掉它  
-![](https://res.zhangkai.xin/pic/GBTD1.png)  
+![](/pic/GBTD1.png)  
 不好意思啊，修改了注册表后，我们需要关闭程序再打开来让它重新加载各项数据。。。
 
 等下，我们还是待暴力解决啊。。。
@@ -50,11 +51,11 @@ ntsd -c q -pn StudentMain.exe
 计算机\HKEY_LOCAL_MACHINE\SOFTWARE\TopDomain\e-Learning Class Standard\1.00
 计算机\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TopDomain\e-Learning Class Standard\1.00
 ```
-![](https://res.zhangkai.xin/pic/GBTD5.png)
+![](/pic/GBTD5.png)
 
 找到 UninstallPasswd ，查看它的值，发现为PasswdXXX，这样的文本，其中XXX就为学生端密码，在设置里填上XXX，就可以愉快地修改配置了。
 
-![](https://res.zhangkai.xin/pic/GBTD6.png)
+![](/pic/GBTD6.png)
 
 （部分学生端的设置没有一些选项，这些只能通过修改注册表并重启学生端解决设置~~（当然你能碰讲台上那个教师端更方便。。。）~~）
 
@@ -62,7 +63,7 @@ ntsd -c q -pn StudentMain.exe
 - Q：为什么我的注册表长这样，密码输入为 123456 或者 [123456] ，都不对呢？  
 - A：这个原因很简单，极域的公司又不是一帮傻子，当有学校反映学生可以找到密码的那一刻起，极域公司就加密了密码，然后就只会在注册表留下Passwd[123456]，无论你找格式改成什么都不对。。。
 
-![](https://res.zhangkai.xin/pic/GBTD7.png)
+![](/pic/GBTD7.png)
 
 这是极域2015V5.0及以上版本（也就是2.0以上版本）尤其是豪华版的加密机制，我们怎么解决这个问题呢？ 
 
@@ -70,37 +71,37 @@ ntsd -c q -pn StudentMain.exe
 
 我们还是可以通过一款反汇编软件解决掉它—— ollydbg 。
 
-![](https://res.zhangkai.xin/pic/GBTD8.png)
+![](/pic/GBTD8.png)
 
 我们打开它，点击File->Attach，找到StudentMain并附加进程。
 
-![](https://res.zhangkai.xin/pic/GBTD9.png)
+![](/pic/GBTD9.png)
 
 按Ctrl+G跟随表达式00401000。
 
-![](https://res.zhangkai.xin/pic/GBTD10.png)
+![](/pic/GBTD10.png)
 
-![](https://res.zhangkai.xin/pic/GBTD11.png)
+![](/pic/GBTD11.png)
 
 然后我们搜索字符串，搜到了两处 mythware_super_password ，分别在表达式00431137和0045240E位置。
 
-![](https://res.zhangkai.xin/pic/GBTD12.png)
+![](/pic/GBTD12.png)
 
-![](https://res.zhangkai.xin/pic/GBTD13.png)
+![](/pic/GBTD13.png)
 
 然后我们按F2标记为程序断点。
 
 然后我们在设置里瞎输入一串密码并点确定，发现学生端暂停了。
 
-![](https://res.zhangkai.xin/pic/GBTD14.png)
+![](/pic/GBTD14.png)
 
 这时我们按F8单步运行学生端程序，当运行到表达式0045242A处时，发现密码就在后方显示 UNICODE "XXX" ，那么这个XXX就是学生端的密码了。
 
-![](https://res.zhangkai.xin/pic/GBTD15.png)
+![](/pic/GBTD15.png)
 
 此时我们继续运行程序，然后File->Detach，接着关闭ollydbg，再次输入解锁密码即可进入设置页面，屡试不爽。
 
-![](https://res.zhangkai.xin/pic/GBTD6.png)
+![](/pic/GBTD6.png)
 
 # 0x05 一些学生端的梗
 - **重要的一点：**我们修改本机IP地址，就不会受教师控制。缺点是容易导致IP地址冲突，而且新版本教师机搜学生机好像变快了，不过教师还是不知道你的新IP，它会看到有台新电脑而且你的没上线，在有人不在时稳得很。
@@ -209,8 +210,8 @@ ntsd -c q -pn StudentMain.exe
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

@@ -4,11 +4,12 @@ date: 2019-01-13 14:42:00
 tags: 
   - Python入门
 ---
+
 为什么我突然写这个坑贼大的系列？原因是我一个学长貌似他们要学Python于是找到了我，额，为了防止像我在机房教高一入门把他们全体说蒙的情况发生，我只好硬着头皮总结下这些东西，尽量照顾萌新，但是我还是要默认读者具有计算机基础知识，否则还是很难继续阅读的。
 
 # 安装Python
 相比我们介绍到的C++来说，Python的编辑器和编译器被官方融于一体，只需要下载[官网](https://www.python.org/downloads/release)上的Python安装即可。
-![](https://res.zhangkai.xin/pic/Python01-01.png)
+![](/pic/Python01-01.png)
 特别地，我们要在安装Python时选中`Add Python 3.7 to PATH`。
 # 运行Python
 我们打开命令行，输入
@@ -105,8 +106,8 @@ print('Hello, world!')
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

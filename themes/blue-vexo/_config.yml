@@ -1,5 +1,5 @@
-author: WilliamPeterMatthew
-description: Peter_Matthew的博客
+author: William Peter Matthew
+description: Peter_Matthew的博客 | 我有昕想法
 keyword: Computer
 favicon: 
 
@@ -28,7 +28,7 @@ qrcode: true
 # comment
 # you can set gitment, uyan or disqus
 
-comment: valine
+comment: false
 
 # gitment config
 gitment_owner: 

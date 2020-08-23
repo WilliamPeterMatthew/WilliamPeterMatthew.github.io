@@ -14,22 +14,22 @@ tags:
 ## 软件
 必不可少的有
 - [Node.js](http://nodejs.cn/download/)（可以使用命令`node -v`查看版本）  
-- ![Node.js](https://res.zhangkai.xin/pic/Blog-Hexo01.png)  
+- ![Node.js](/pic/Blog-Hexo01.png)  
 - [Git](https://git-scm.com/download/win)（可以使用命令'git version'查看版本）
-- ![Git](https://res.zhangkai.xin/pic/Blog-Hexo02.png)    
+- ![Git](/pic/Blog-Hexo02.png)    
 这些是生成博客的必要软件
 
 可选的有
 - [Notepad++](https://notepad-plus-plus.org/download/)  
-- ![Notepad++](https://res.zhangkai.xin/pic/Blog-Hexo04.png)  
+- ![Notepad++](/pic/Blog-Hexo04.png)  
 这个是为了编写方便使用的软件，不推荐使用Windows自带的记事本和写字板编写文件。如果你手上有其他多功能文本编辑器，当然也可以使用。
 
 > 注意：如果你选择使用Notepad++，应该在安装Git时将编辑器选择`Use Notepad++ as Git's default editor`。  
-> ![DefaultEditor](https://res.zhangkai.xin/pic/Blog-Hexo03.png)  
+> ![DefaultEditor](/pic/Blog-Hexo03.png)  
 
 ## 安装Hexo
 新建一个博客目录文件夹，然后右键文件夹中的空白处，选择`Git Bash Here`。
-![](https://res.zhangkai.xin/pic/Blog-Hexo05.png)
+![](/pic/Blog-Hexo05.png)
 
 等到出现以 `$ ` 开头的提示表示可以键入命令后，输入
 ```bash
@@ -269,7 +269,7 @@ categories:
 > 当以上文字存在部分符号不合法时会出现错误，建议加上`""`号分割前后，例如：`title: "标题[1]"`
 > 如果出现渲染错误，比如上面的内容出现在了文章开头而不是被隐藏，请检查文章的格式是否为Windows(CR LF)；
 > 如果出现中文乱码，比如出现了 `˖Ԗ}ёڷޯ` 或 `鎵嬫寔涓ゆ妸妫嶆枻閾?` 这种乱码，请检查文章的编码是否为UTF-8；
-> ![](https://res.zhangkai.xin/pic/Blog-Hexo06.png)
+> ![](/pic/Blog-Hexo06.png)
 
 ## 主题
 有很多非常好的主题，由于主题数量庞大且编写风格不一，所以无法在这里为每位读者所喜爱的主题写建站教程。  
@@ -360,7 +360,7 @@ about:
 > 注意，Gitment只支持GitHub上的repo，如果你要利用Coding或者Gitee的功能，可以尝试DIY。
 
 请[点这里](https://github.com/settings/applications/new)打开GitHub的OAuth应用创建页面，输入博客名字、主页地址、描述和调用地址。**请注意：主页地址和调用地址都要填你的博客的地址。**  
-![](https://res.zhangkai.xin/pic/Blog-Hexo07.png)
+![](/pic/Blog-Hexo07.png)
 
 创建完后，复制Client ID和Client Secret的信息。
 
@@ -380,8 +380,8 @@ gitment_oauth_secret: 复制的Client Secret
 即可完成配置
 
 > 请注意，每篇博客都需要博主手动初始化，否则会显示Error。  
-> ![](https://res.zhangkai.xin/pic/Blog-Hexo08.png)  
-> ![](https://res.zhangkai.xin/pic/Blog-Hexo09.png)  
+> ![](/pic/Blog-Hexo08.png)  
+> ![](/pic/Blog-Hexo09.png)  
 
 ## 置顶操作
 打开博客目录下的`.\node_modules\hexo-generator-index\lib`文件夹，将`generator.js`文件内容替换为下面的代码
@@ -432,7 +432,7 @@ top: 数值
 我们新一个项目（当然也可以在原repo上新建一个分支），然后[点这里](https://github.com/settings/tokens)生成一个AccessToken（建议把除了delete_repo以外的权限全部开启），然后把出来的一串值复制。
 
 打开Travis CI，点开你新建的项目，在Environment Variables里，在Value处粘贴那串值，名字随意，然后点击Add。
-![](https://res.zhangkai.xin/pic/Blog-Hexo10.png)
+![](/pic/Blog-Hexo10.png)
 
 返回Hexo的文件目录，执行
 ```bash
@@ -443,7 +443,7 @@ $ git remote add origin https://github.com/yourname/repo的名字.git
 ```batch
 cd.>.travis.yml
 ```
-![](https://res.zhangkai.xin/pic/Blog-Hexo11.png)
+![](/pic/Blog-Hexo11.png)
 
 粘贴如下内容并修改后保存
 ```
@@ -487,10 +487,10 @@ $ git push origin master
 ```
 当显示完成时，打开Travis，如果显示build passing，则说明正常（如果网站还未更新、显示build failing等，可以检查下配置）。
 > 状态：
-> ![passing](https://res.zhangkai.xin/pic/passing.svg)
-> ![failing](https://res.zhangkai.xin/pic/failing.svg)
-> ![error](https://res.zhangkai.xin/pic/error.svg)
-> ![unknown](https://res.zhangkai.xin/pic/unknown.svg)
+> ![passing](/pic/passing.svg)
+> ![failing](/pic/failing.svg)
+> ![error](/pic/error.svg)
+> ![unknown](/pic/unknown.svg)
 
 这样就配置好了。
 
@@ -535,8 +535,8 @@ $ npm config set registry https://registry.npm.taobao.org
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

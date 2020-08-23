@@ -4,6 +4,7 @@ date: 2018-10-11 16:44:13
 tags: 
   - 科技
 ---
+
 # 环境
 在32位环境下， float占用32位，double占用64位，long double占用80位
 
@@ -15,11 +16,11 @@ tags:
 | double | 1 | 11 | 0 | 52 | 64 |
 | long double | 1 | 15 | 1 | 63 | 80 |
 
-![](https://res.zhangkai.xin/pic/590px-Float_example.svg.png)
+![](/pic/590px-Float_example.svg.png)
 
-![](https://res.zhangkai.xin/pic/618px-IEEE_754_Double_Floating_Point_Format.svg.png)
+![](/pic/618px-IEEE_754_Double_Floating_Point_Format.svg.png)
 
-![](https://res.zhangkai.xin/pic/762px-X86_Extended_Floating_Point_Format.svg.png)
+![](/pic/762px-X86_Extended_Floating_Point_Format.svg.png)
 
 # 举例说明
 将100分别转化为float型,double型和long double型的二进制表达。
@@ -211,8 +212,8 @@ long double strtolongdbl(char* str)
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

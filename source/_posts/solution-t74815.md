@@ -4,6 +4,7 @@ date: 2019-05-03 13:13:13
 tags: 
   - 题解
 ---
+
 [LuoguT74815](https://www.luogu.org/problemnew/show/T74815):
 
 这题是一道打表题，为的是纪念退役。

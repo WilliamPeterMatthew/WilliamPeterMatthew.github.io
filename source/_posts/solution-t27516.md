@@ -4,6 +4,7 @@ date: 2018-04-16 18:50:19
 tags: 
   - 题解
 ---
+
 [LuoguT27516](https://www.luogu.org/problemnew/show/T27516):
 
 本道题是所有这6题中最难的一道，因为为了愚人，让人觉得简单而放到了第二题的位置。

@@ -4,6 +4,7 @@ date: 2018-04-16 19:22:24
 tags: 
   - 题解
 ---
+
 [LuoguT27522](https://www.luogu.org/problemnew/show/T27522):
 
 此题用了二项式定理，不知道可自行百度。

@@ -4,6 +4,7 @@ date: 2018-07-22 15:50:22
 tags: 
   - 科技
 ---
+
 ## 输入输出效率比较
 一份摘自LOJ的一份读入测试数据，若干读入整数速度测试的结果（单位：毫秒）。 
 输入：$3×10^6$个在区间中随机生成的十进制整数。
@@ -313,8 +314,8 @@ void _print(tpo_p x,Tpo_p ...X)
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

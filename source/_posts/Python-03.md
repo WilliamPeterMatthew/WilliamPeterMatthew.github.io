@@ -4,6 +4,7 @@ date: 2019-02-08 03:18:00
 tags: 
   - Python入门
 ---
+
 在上一期的末尾我们说到一段代码
 ```python
 a=100
@@ -259,11 +260,11 @@ print(b)
 > 最后一行打印出b的内容是`'ABC'`还是`'XYZ'`？从数学上会错误地认为a和b相同都是`'XYZ'`，实际上b的值是`'ABC'`，程序是一行一行执行的，所以我们也一行一行执行。
 > 
 > 第一：a=`'ABC'`，解释器创建了字符串`'ABC'`和变量a，并把a指向字符串`'ABC'`
-> ![a='ABC'](https://res.zhangkai.xin/pic/Python03-01.png)
+> ![a='ABC'](/pic/Python03-01.png)
 > 第二：b=a，解释器创建了变量b，并把它指向a所指向的字符串`'ABC'`
-> ![b=a](https://res.zhangkai.xin/pic/Python03-02.png)
+> ![b=a](/pic/Python03-02.png)
 > 第三：a=`'XYZ'`，解释器创建了字符串`'XYZ'`，并把a的指向改为`'XYZ'`，此时b是没有变的。
-> ![a='XYZ'](https://res.zhangkai.xin/pic/Python03-03.png)
+> ![a='XYZ'](/pic/Python03-03.png)
 > 所以最后b的值就是`'ABC'`了。
 
 ## 常量
@@ -348,8 +349,8 @@ else:
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

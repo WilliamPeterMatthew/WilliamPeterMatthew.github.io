@@ -4,6 +4,7 @@ date: 2019-01-07 10:51:53
 tags: 
   - 科技
 ---
+
 由于NOI官网给出的NOI Linux 1.4.1是基于Ubuntu 14.04.5的，因此我特意使用Ubuntu 14.04.5
 
 $\huge\color{red}{Warning}$ 请不要尝试在上个世纪的电脑上执行以下操作，这可能会导致严重的“Kernel panic - not syncing: Attempted to kill init!”错误  
@@ -57,20 +58,20 @@ password updated successfully
 如果忘记密码怎么办？  
 额，开机按Shift键，出现如下界面。（手速要快，Shift键要按时间久一点）  
 在开机菜单里选择Ubuntu高级选项（第二项）
-![](https://res.zhangkai.xin/pic/20161213175823266.jpg)
+![](/pic/20161213175823266.jpg)
 按回车键进入如下界面，然后选中有recovery mode的选项（第三项）
-![](https://res.zhangkai.xin/pic/20161213175947735.jpg)
+![](/pic/20161213175947735.jpg)
 按e进入如下界面，并找到图中红色框的
 ```
 recovery nomodeset
 ```
-![](https://res.zhangkai.xin/pic/20161213180034937.jpg)
+![](/pic/20161213180034937.jpg)
 删除，并在这一行的后面输入
 ```
 quiet splash rw init=/bin/bash
 ```
 后，按F10
-![](https://res.zhangkai.xin/pic/20161213180105876.jpg)
+![](/pic/20161213180105876.jpg)
 如果忘记用户名，可以键入
 ```
 mount -o rw,remount /
@@ -147,8 +148,8 @@ sudo snap install --classic notepadqq
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

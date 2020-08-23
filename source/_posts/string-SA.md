@@ -4,6 +4,7 @@ date: 2019-01-14 09:47:16
 tags: 
   - 字符串
 ---
+
 # 后缀数组
 ## 后缀
 对于一个串来说，第i个字符开始的串就是后缀。。。  
@@ -135,7 +136,7 @@ Example: aabaaaab
 排序完成
 
 上面的过程用图表示为
-![](https://res.zhangkai.xin/pic/c2cec3fdfc03924586f1a8948694a4c27c1e25e0.jpg)
+![](/pic/c2cec3fdfc03924586f1a8948694a4c27c1e25e0.jpg)
 ### 优化2：基数排序
 如果我们用快排的话还是太慢，考虑到每一次排序我们都是在排两位数，所以我们用基数排序优化一下可以将排序优化到$O(n)$，这样总复杂度就降到了$O(n\log{n})$
 
@@ -360,8 +361,8 @@ int lcp(int i,int j)
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

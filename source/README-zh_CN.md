@@ -78,7 +78,7 @@ public class Hello
 ```
 
 ## 协议
-[![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)  
-[![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)  
+[![知识共享许可协议](https://www.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)  
+[![知识共享许可协议](https://www.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)  
 博客的作品均采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。  
 更多关于此协议的详细信息可以查看[LICENSE](https://github.com/WilliamPeterMatthew/williampetermatthew.github.io/blob/master/LICENSE-zh_CN)文件或者查看其官方的[legalcode](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans)版本。

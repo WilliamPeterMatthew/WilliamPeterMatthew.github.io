@@ -4,10 +4,11 @@ date: 2018-10-09 15:48:06
 tags: 
   - 科技
 ---
+
 # 重载运算符
 ## 可重载运算符/不可重载运算符
 下面是可重载的运算符列表：
-![可重载运算符列表](https://res.zhangkai.xin/pic/QQ浏览器截图20181018105607.png)
+![可重载运算符列表](/pic/QQ浏览器截图20181018105607.png)
 
 下面是不可重载的运算符列表：
 - .：成员访问运算符
@@ -126,8 +127,8 @@ matrix pow(matrix a,int k)
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

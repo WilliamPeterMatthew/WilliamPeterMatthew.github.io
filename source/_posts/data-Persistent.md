@@ -9,19 +9,19 @@ tags:
 ## 权值线段树
 普通的线段树维护的是单点的值，比方说一个数组是{1,1,2,4,2,4,3,4}，开成普通线段树长这样
 
-![](https://res.zhangkai.xin/pic/2019-01-09_07-51-59-621000.png)
+![](/pic/2019-01-09_07-51-59-621000.png)
 
 而权值线段树维护的是这个数出现了几次，就比方说上面的数组维护成了这样
 
-![](https://res.zhangkai.xin/pic/2019-01-09_07-55-44-679000.png)
+![](/pic/2019-01-09_07-55-44-679000.png)
 ## 主席树
 现在我们在树中插入一个数2
 
-![](https://res.zhangkai.xin/pic/2019-01-09_08-10-02-152000.png)
+![](/pic/2019-01-09_08-10-02-152000.png)
 
 观察修改过后的权值线段树，发现只有红色的链有更改，所以我们有一个大胆的想法：可不可以每次只建一个链，由于根节点肯定不一样所以我们保存根节点的信息的数组就是保存版本信息的数组，这样就可以回到之前的版本，就十分的方便了。
 
-![](https://res.zhangkai.xin/pic/2019-01-09_08-12-58-370000.png)
+![](/pic/2019-01-09_08-12-58-370000.png)
 
 这就是所谓的主席树即可持久化线段树。
 
@@ -318,8 +318,8 @@ int main()
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

@@ -4,6 +4,7 @@ date: 2018-07-21 15:52:55
 tags: 
   - 题解
 ---
+
 [LuoguU30206](https://www.luogu.org/problemnew/show/U30206):
 
 k=1：直接全部异或起来。

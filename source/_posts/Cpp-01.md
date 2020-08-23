@@ -4,17 +4,18 @@ date: 2019-01-13 10:25:00
 tags: 
   - C++入门
 ---
+
 C++入门主要方便的是OI选手，OI选手一般的系统环境为Windows而竞赛环境为Linux。所以我们对环境的介绍会以Windows为主，Linux为辅。
 
 # 编译器
 我们要将一份代码转化为计算机能读懂能运行的程序，必不可少的就是编译器。C++的编译器名字叫做g++，请注意gcc是C语言的编译器而不是C++语言的。
 
 在Windows上，默认是没有安装g++的，所以我们需要手动安装g++。请通过下载安装[MinGW](http://www.mingw.org/)来安装g++。安装后，然后打开系统属性，选择“高级系统设置”（“高级”选项卡），找到“环境变量”并点击。
-![](https://res.zhangkai.xin/pic/Cpp01-01.png)
+![](/pic/Cpp01-01.png)
 然后找到**系统变量**中的`Path`并编辑
-![](https://res.zhangkai.xin/pic/Cpp01-02.png)
+![](/pic/Cpp01-02.png)
 在末尾以";"分割地址，并输入g++的目录。
-![](https://res.zhangkai.xin/pic/Cpp01-03.png)
+![](/pic/Cpp01-03.png)
 点击确定。在命令提示符输入g++并敲回车，如果提示
 ```
 g++: fatal error: no input files
@@ -100,8 +101,8 @@ int main()
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

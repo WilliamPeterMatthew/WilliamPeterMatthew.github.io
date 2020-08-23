@@ -5,6 +5,7 @@ tags:
   - 友链
 top: 50
 ---
+
 ## 我？
 
 张开昕（男，2002/04/20 — ），（经常使用WilliamPeterMatthew、Peter_Matthew作为用户名，）一个曾经的HA省OIer，一名在读高中生，喜爱计算机。。。  
@@ -16,9 +17,9 @@ top: 50
 <script src="http://webpresence.qq.com/getonline?Type=1&1145232806:"></script> 
 <script> 
 	if(online[0]==0) 
-		document.write("<a target='_blank' href='http://sighttp.qq.com/authd?IDKEY=950ae6bebc382b5f992bb615a23334fb90cbfae4201b1473'><img border='0'  src='https://res.zhangkai.xin/pic/offline_qq_1' alt='发送QQ离线留言' title='发送QQ离线留言'/></a>"); 
+		document.write("<a target='_blank' href='http://sighttp.qq.com/authd?IDKEY=950ae6bebc382b5f992bb615a23334fb90cbfae4201b1473'><img border='0'  src='/pic/offline_qq_1.png' alt='发送QQ离线留言' title='发送QQ离线留言'/></a>"); 
 	else 
-		document.write("<a target='_blank' href='http://sighttp.qq.com/authd?IDKEY=950ae6bebc382b5f992bb615a23334fb90cbfae4201b1473'><img border='0'  src='https://res.zhangkai.xin/pic/qq_1.png' alt='与我进行QQ交谈' title='与我进行QQ交谈'/></a>"); 
+		document.write("<a target='_blank' href='http://sighttp.qq.com/authd?IDKEY=950ae6bebc382b5f992bb615a23334fb90cbfae4201b1473'><img border='0'  src='/pic/qq_1.png' alt='与我进行QQ交谈' title='与我进行QQ交谈'/></a>"); 
 </script>
 
 Email: contact@zhangkai.xin
@@ -62,12 +63,12 @@ CTP_314（卢宸昊）[Luogu](https://www.luogu.org/blog/ctp-314/)|[Github](http
 [yxdgogogo（杨晓东）(Luogu Space)](https://www.luogu.com.cn/user/12287)  
 [Danbo_1010（贺帅）(Luogu Space)](https://www.luogu.com.cn/user/35392)  
 
-![](https://res.zhangkai.xin/pic/0076VEu5ly1g09gtou8spj30u009eacd.jpg)
+![](/pic/0076VEu5ly1g09gtou8spj30u009eacd.jpg)
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

@@ -4,6 +4,7 @@ date: 2018-10-26 18:54:46
 tags: 
   - 题解
 ---
+
 [LuoguT53818](https://www.luogu.org/problemnew/show/T53818):
 
 Splay？Rotate？不不不！这些都是蒟蒻出题人吓唬做题人的道具而已。

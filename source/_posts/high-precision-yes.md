@@ -4,6 +4,7 @@ date: 2018-10-06 08:14:48
 tags: 
   - 科技
 ---
+
 本博客是 高精度无符号整数算法 的延伸版本，请读者在食用前序文章后食用本篇效果更佳。
 # 高精度的写法
 同无符号的一样，我们仍采用struct封装，但与之前不同的是，我们新定义一个f表示正负。
@@ -624,8 +625,8 @@ int main()
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

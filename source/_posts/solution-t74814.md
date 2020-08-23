@@ -4,6 +4,7 @@ date: 2019-05-03 12:12:12
 tags: 
   - 题解
 ---
+
 [LuoguT74814](https://www.luogu.org/problemnew/show/T74814):
 
 50pts：随机输出1/-1（期望50pts）或者只输出1/-1中的一个

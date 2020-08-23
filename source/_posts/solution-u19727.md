@@ -4,6 +4,7 @@ date: 2018-10-17 20:42:08
 tags: 
   - 题解
 ---
+
 [LuoguU19727](https://www.luogu.org/problemnew/show/U19727):
 
 按题意模拟暴力即可。

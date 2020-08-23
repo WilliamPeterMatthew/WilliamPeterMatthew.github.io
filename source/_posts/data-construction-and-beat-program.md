@@ -4,6 +4,7 @@ date: 2018-09-10 20:52:32
 tags: 
   - 科技
 ---
+
 # 数据构造
 作为一个~~毒瘤~~出题人，我们要学着出~~毒瘤~~数据~~卡做题人~~；作为一个~~蒟蒻~~做题人，我们要学着出~~毒瘤~~数据尝试~~卡自己的程序并~~调试，下面简单介绍出数据的一些方法。
 ## 总程序的写法
@@ -115,7 +116,7 @@ make_data函数是你需要修改的函数，你在这里输出数据，直接�
 
 ### 字符（串）生成
 
-![0-127](https://res.zhangkai.xin/pic/0-127.jpg)![128-255](https://res.zhangkai.xin/pic/128-255.jpg)
+![0-127](/pic/0-127.jpg)![128-255](/pic/128-255.jpg)
 
 正如上表所示，我们要生成字符串的时候需要注意范围（0~127，128~255实际有问题），并且33~126的值才有实际意义。  
 实际我们写的时候需要写
@@ -485,8 +486,8 @@ int main()
 
 ------------
 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
-> [![知识共享许可协议](https://res.zhangkai.xin/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+> [![知识共享许可协议](/pic/license/BY-NC-SA_88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 > 
 > 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)进行许可。

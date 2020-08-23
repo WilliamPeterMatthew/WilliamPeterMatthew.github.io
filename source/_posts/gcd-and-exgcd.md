@@ -4,6 +4,7 @@ date: 2018-11-07 10:24:24
 tags: 
   - 数学
 ---
+
 # gcd
 STL库中有个template化的非递归版gcd，需要调用`<alogorithm>`  
 使用方式是

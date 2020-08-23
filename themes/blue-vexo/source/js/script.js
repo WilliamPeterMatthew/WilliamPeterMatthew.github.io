@@ -1,5 +1,5 @@
 (function ($) {
-  console.log('© 2018 - 2020 WilliamPeterMatthew | https://github.com/WilliamPeterMatthew\nProudly powered by Hexo           | https://hexo.io\n© Theme-Vexo                      | https://github.com/yanm1ng/hexo-theme-vexo\nTheme by yanm1ng                  | https://github.com/yanm1ng\nModified by WilliamPeterMatthew   | https://github.com/WilliamPeterMatthew')
+  console.log('© 2018 - 2020 WilliamPeterMatthew                          | https://github.com/WilliamPeterMatthew\nProudly powered by Hexo                                    | https://hexo.io\n© Theme-Vexo                                               | https://github.com/yanm1ng/hexo-theme-vexo\nTheme by yanm1ng                                           | https://github.com/yanm1ng\nModified by WilliamPeterMatthew                            | https://github.com/WilliamPeterMatthew\nHA Internet Content Provider Registration Num.20022692-1   | http://www.beian.miit.gov.cn/\nHA Public Network Security Registration Num.XXXXXXXXXXXXXX | http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=XXXXXXXXXXXXXX')
   var app = $('.app-body')
   var header = $('.header')
   var banner = document.getElementById('article-banner') || false
