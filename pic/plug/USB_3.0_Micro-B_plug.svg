@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="798px" height="232px" viewBox="0 0 798 232" enable-background="new 0 0 798 232" xml:space="preserve">
+<symbol  id="pins_1_" viewBox="-10.5 -21.5 21 43">
+	<polygon fill="#FFDE00" stroke="#000" stroke-miterlimit="10" points="10,0 -10,0 -10,21 10,21 	"/>
+	<polygon stroke="#000" stroke-miterlimit="10" points="10,-21 -10,-21 -10,0 10,0 	"/>
+	<polygon display="none" fill="none" points="-10.5,21.5 10.5,21.5 10.5,-21.5 -10.5,-21.5 	"/>
+</symbol>
+<g id="back">
+	<polygon fill="#737373" stroke="#000" stroke-miterlimit="10" points="565.898,131.402 550.096,146.902 334.355,146.902 
+		310.589,130.902 296.268,115.462 296.268,66.903 579.268,66.903 579.268,114.366 	"/>
+	<rect x="27.268" y="66.903" fill="#212121" stroke="#000" stroke-miterlimit="10" width="193" height="37"/>
+	<rect x="27.268" y="103.903" fill="#434343" stroke="#000" stroke-miterlimit="10" width="193" height="37"/>
+	<rect x="347.268" y="66.903" fill="#212121" stroke="#000" stroke-miterlimit="10" width="178" height="37"/>
+	<line fill="none" stroke="#000" stroke-miterlimit="10" x1="347.268" y1="104.403" x2="347.268" y2="147.402"/>
+	<line fill="none" stroke="#000" stroke-miterlimit="10" x1="525.268" y1="104.403" x2="525.268" y2="147.402"/>
+</g>
+<g id="rim">
+	<g>
+		<polygon fill="none" stroke="#000" stroke-width="12" stroke-linejoin="bevel" stroke-miterlimit="10" points="571.768,65.403 
+			579.506,68.55 582.768,76.475 582.768,101.403 578.854,115.892 558.13,140.704 550.096,146.402 330.746,146.527 323.786,143.402 
+			316.81,138.402 298.139,115.892 293.235,106.729 293.267,88.903 283.696,80.403 232.861,80.403 224.768,88.403 224.768,138.402 
+			222.732,143.846 216.662,146.402 38.768,146.402 31.521,142.923 27.461,135.667 27.707,75.023 30.678,69.697 37.652,65.403 		"/>
+		<polygon fill="none" stroke="#737373" stroke-width="10" stroke-linejoin="bevel" stroke-miterlimit="10" points="571.768,65.403 
+			579.506,68.55 582.768,76.475 582.768,101.403 578.854,115.892 558.13,140.704 550.096,146.402 330.746,146.527 323.786,143.402 
+			316.81,138.402 298.139,115.892 293.235,106.729 293.267,88.903 283.696,80.403 232.861,80.403 224.768,88.403 224.768,138.402 
+			222.732,143.846 216.662,146.402 38.768,146.402 31.521,142.923 27.461,135.667 27.707,75.023 30.678,69.697 37.652,65.403 		"/>
+	</g>
+</g>
+<g id="pins">
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 65.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 96.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 127.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 158.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 189.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 374.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 405.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 436.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 467.2676 109.9033)" overflow="visible"/>
+	
+		<use xlink:href="#pins_1_"  width="21" height="43" x="-10.5" y="-21.5" transform="matrix(1 0 0 -1 498.2676 109.9033)" overflow="visible"/>
+</g>
+<g id="text">
+	<text transform="matrix(1 0 0 1 45.9443 35.4619)" font-family="Liberation Sans" font-size="28">10  9  8  7  6</text>
+	<text transform="matrix(1 0 0 1 367.9614 35.4619)" font-family="Liberation Sans" font-size="28">5  4  3  2  1</text>
+	<text transform="matrix(1 0 0 1 631.0615 113.2852)" font-family="Liberation Sans" font-size="35">≈1.8mm</text>
+	<text transform="matrix(1 0 0 1 291.9731 191.5195)" font-family="Liberation Sans" font-size="35">≈0.65mm</text>
+	<line fill="none" stroke="#000" stroke-miterlimit="10" x1="589.768" y1="59.903" x2="680.768" y2="59.903"/>
+	<line fill="none" stroke="#000" stroke-miterlimit="10" x1="561.768" y1="150.902" x2="680.768" y2="150.902"/>
+	<line fill="none" stroke="#000" stroke-miterlimit="10" x1="508.268" y1="131.402" x2="508.268" y2="223.402"/>
+	<line fill="none" stroke="#000" stroke-miterlimit="10" x1="477.268" y1="131.402" x2="477.268" y2="223.402"/>
+	<g>
+		<line fill="none" stroke="#000" stroke-miterlimit="10" x1="468.768" y1="205.902" x2="440.768" y2="205.902"/>
+		<g>
+			<path d="M466.82,205.902l-2.191,3.604l0.123,0.081l5.875-2.333c2.047-0.45,4.094-0.899,6.141-1.353
+				c-2.047-0.449-4.094-0.899-6.141-1.352l-5.875-2.332l-0.123,0.061L466.82,205.902z"/>
+		</g>
+	</g>
+	<g>
+		<line fill="none" stroke="#000" stroke-miterlimit="10" x1="517.768" y1="205.902" x2="545.768" y2="205.902"/>
+		<g>
+			<path d="M519.715,205.902l2.191-3.604l-0.123-0.08l-5.875,2.332c-2.047,0.451-4.094,0.9-6.142,1.352
+				c2.048,0.451,4.095,0.9,6.142,1.353l5.875,2.333l0.123-0.063L519.715,205.902z"/>
+		</g>
+	</g>
+	<g>
+		<line fill="none" stroke="#000" stroke-miterlimit="10" x1="664.268" y1="159.402" x2="664.268" y2="187.402"/>
+		<g>
+			<path d="M664.768,160.852l3.604,2.19l0.081-0.123l-2.333-5.875c-0.451-2.047-0.9-4.094-1.353-6.142
+				c-0.449,2.048-0.899,4.095-1.352,6.142l-2.333,5.875l0.063,0.123L664.768,160.852z"/>
+		</g>
+	</g>
+	<g>
+		<line fill="none" stroke="#000" stroke-miterlimit="10" x1="664.268" y1="50.403" x2="664.268" y2="23.403"/>
+		<g>
+			<path d="M664.768,48.956l-3.604-2.191l-0.081,0.123l2.333,5.875c0.451,2.047,0.9,4.094,1.352,6.141
+				c0.45-2.047,0.9-4.094,1.353-6.141l2.333-5.875l-0.063-0.123L664.768,48.956z"/>
+		</g>
+	</g>
+</g>
+</svg>

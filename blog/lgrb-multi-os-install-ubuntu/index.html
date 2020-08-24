@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="A Blog About Information and Technology">
+  <meta name="keyword" content="Computer">
+  
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      【转载】运行linux的第四种方式：双系统 | 我有昕想法 | Peter_Matthew的博客
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <!-- <script src="//code.tidio.co/g6zn0ewvu9ieaw5pfegkodcp6eple7el.js" async></script> -->
+  
+<script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
+
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<meta name="generator" content="Hexo 5.1.1"></head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png" />
+</div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Peter_Matthew的博客</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">首页</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">标签</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">项目</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">关于</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">首页</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">标签</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">归档</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">项目</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">关于</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>【转载】运行linux的第四种方式：双系统</h2>
+  <p class="post-date">2019-01-07</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.2.1/css/hint.min.css"><hr>
+<h1 id="运行linux的第四种方式：双系统"><a href="#运行linux的第四种方式：双系统" class="headerlink" title="运行linux的第四种方式：双系统"></a>运行linux的第四种方式：双系统</h1><hr>
+<blockquote>
+<p>声明：本文为转载文章，转载自<a target="_blank" rel="noopener" href="https://92602.blog.luogu.org/multi-os-install-ubuntu">洛谷日报#109</a>，原作者为WarrenWN。</p>
+</blockquote>
+<hr>
+<h1 id="双系统"><a href="#双系统" class="headerlink" title="双系统"></a>双系统</h1><p>前面日报里已经介绍了3种运行linux的工具，我来介绍第四种，这种方法能让你用上<strong>真正</strong>的linux。</p>
+<h1 id="color-red-Warning"><a href="#color-red-Warning" class="headerlink" title="$\color{red}{Warning}$"></a>$\color{red}{Warning}$</h1><h1 id="text-color-red-这种方法可能会损坏您的电脑，请谨慎尝试"><a href="#text-color-red-这种方法可能会损坏您的电脑，请谨慎尝试" class="headerlink" title="$\text{\color{red}这种方法可能会损坏您的电脑，请谨慎尝试}$"></a>$\text{\color{red}这种方法可能会损坏您的电脑，请谨慎尝试}$</h1><p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544189391808&di=25bff4b12d82f13c607a5ff423787aba&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201408%2F11%2F20140811140831_ABX4v.thumb.700_0.jpeg" alt="不作死就不会死"></p>
+<p>下面进入正题：</p>
+<h1 id="1-准备"><a href="#1-准备" class="headerlink" title="1. 准备"></a>1. 准备</h1><p>一个<strong>被格式化</strong>的USB（容量 &gt; 2GB 且已经插入电脑），提前备份好数据<br>良好的网络环境</p>
+<h1 id="2-下载"><a href="#2-下载" class="headerlink" title="2. 下载"></a>2. 下载</h1><p>点击 <a target="_blank" rel="noopener" href="https://www.ubuntu.com/download/desktop/thank-you?country=CN&version=18.04.1&architecture=amd64">$\text{ Ubuntu 18.04.1 LTS 下载链接 }$</a></p>
+<p>默默地等待下载完…</p>
+<p>这么一个文件</p>
+<p><img src="https://s1.ax1x.com/2018/12/07/F3Q4HS.png" alt="ubuntu-18.04.1-desktop-amd64.iso"></p>
+<p>下载<a target="_blank" rel="noopener" href="https://cn.ultraiso.net/uiso9_cn.exe">UltralISO</a>并且无脑安装；</p>
+<p>将之前的文件用UltralISO打开(如果提示尚未注册或尚未购买什么的点继续试用): </p>
+<p><img src="https://s1.ax1x.com/2018/12/07/F3lig1.png" alt=""></p>
+<p>点击 启动 ，再点击 制作硬盘映像;<br><img src="https://s1.ax1x.com/2018/12/07/F3l8Df.png" alt=""></p>
+<p>给予管理员权限，然后在弹出窗口里点“写入”: </p>
+<p><img src="https://s1.ax1x.com/2018/12/07/F310Fe.png" alt=""></p>
+<h1 id="一定要确保U盘被格式化且里面的数据都已保存"><a href="#一定要确保U盘被格式化且里面的数据都已保存" class="headerlink" title="一定要确保U盘被格式化且里面的数据都已保存!!!"></a>一定要确保U盘被格式化且里面的数据都已保存!!!</h1><p>弹出窗口点“是”</p>
+<p>等一段时间</p>
+<p><img src="https://s1.ax1x.com/2018/12/07/F33IAO.png" alt=""></p>
+<h1 id="完成后点终止，然后您的U盘就是一个标准的Ubuntu-18-04-1-LTS-安装U盘了！"><a href="#完成后点终止，然后您的U盘就是一个标准的Ubuntu-18-04-1-LTS-安装U盘了！" class="headerlink" title="完成后点终止，然后您的U盘就是一个标准的Ubuntu 18.04.1 LTS 安装U盘了！"></a>完成后点终止，然后您的U盘就是一个<del>标准的</del>Ubuntu 18.04.1 LTS 安装U盘了！</h1><h1 id="3-硬盘分区"><a href="#3-硬盘分区" class="headerlink" title="3. 硬盘分区"></a>3. 硬盘分区</h1><p>分出<strong>连续的</strong>至少50GB的磁盘空间，具体方法请自行百度（一般从C盘分出，Win+R 运行 “diskmgmt.msc” 之后对C盘单击压缩卷，压缩空间量填51200 (MB为单位)，然后确定，如果分不了的可以用其它工具如DiskGenius等,在此不一一解释）</p>
+<p>我分了75GB</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3Dzy8.png" alt=""></p>
+<h1 id="4-BIOS设置"><a href="#4-BIOS设置" class="headerlink" title="4. BIOS设置"></a>4. BIOS设置</h1><p>关掉电脑。重启，进入BIOS界面（各个电脑进入bios的方式不同，我的是惠普笔记本，就狂按f10）</p>
+<p>Hp的BIOS长这个样子 </p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3DoLD.jpg" alt=""></p>
+<p>$\text{\color{blue}以下步骤各个电脑大致相同但是会有一些出入，在此仅演示Hp笔记本}$</p>
+<p>右箭头切换菜单到System Configuration,选中Boot option（上箭头下箭头切换） </p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3DfRx.jpg" alt=""></p>
+<p>按回车后找到USB Boot选项（USB启动），打开它(选中按回车后进行选择，点Enabled)</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3Dhz6.jpg" alt=""></p>
+<h1 id="找到”Secure-boot”-安全启动，关掉它"><a href="#找到”Secure-boot”-安全启动，关掉它" class="headerlink" title="找到”Secure boot”(安全启动，关掉它)"></a>找到”Secure boot”(安全启动，关掉它)</h1><p><img src="https://s1.ax1x.com/2018/12/08/F3D5QK.jpg" alt=""></p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3DWJ1.jpg" alt=""></p>
+<h1 id="把USB-Diskette-on-Key-USB-Hard-Disk-挪到最上面（uefi启动挪UEFI-Boot-Order下的，Legacy启动把UEFI和Legacy的都挪一下，用f5-f6挪动）"><a href="#把USB-Diskette-on-Key-USB-Hard-Disk-挪到最上面（uefi启动挪UEFI-Boot-Order下的，Legacy启动把UEFI和Legacy的都挪一下，用f5-f6挪动）" class="headerlink" title="把USB Diskette on Key/USB Hard Disk 挪到最上面（uefi启动挪UEFI Boot Order下的，Legacy启动把UEFI和Legacy的都挪一下，用f5,f6挪动）"></a>把USB Diskette on Key/USB Hard Disk 挪到最上面（uefi启动挪UEFI Boot Order下的，Legacy启动把UEFI和Legacy的都挪一下，用f5,f6挪动）</h1><p>$\text{\color{green}提示：其它电脑这一步与HP具体操作不同。一句话概括:把可移动设备/USB挪到启动顺序的第一个}$</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3DIsO.jpg" alt=""></p>
+<p>选中后f5</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3D7ee.jpg" alt=""></p>
+<p>f10退出，Save changes选Yes</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3DHdH.jpg" alt=""></p>
+<p>然后关机</p>
+<h1 id="5-安装"><a href="#5-安装" class="headerlink" title="5. 安装"></a>5. 安装</h1><p>之前制作的USB插入电脑（不要开机！！！）</p>
+<p>然后按开机</p>
+<p><strong>如果一切正常</strong>，会出现</p>
+<p><img src="https://s1.ax1x.com/2018/12/26/F2Pfeg.jpg" alt=""></p>
+<p>如果没有，说明前面的步骤有问题,回到BIOS设置</p>
+<p>选中Try Ubuntu,回车<br><code>then......</code></p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34Ye1.png" alt="Try Ubuntu"></p>
+<p>一个纯Ubuntu！<br>等等，这个Ubuntu只是试用的…</p>
+<p>点击<strong>Install Ubuntu 18.04.1 LTS</strong></p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34Ci8.png" alt=""></p>
+<p>选语言。简体中文在倒数第3个</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34iRg.png" alt=""></p>
+<p>继续</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34AMj.png" alt=""></p>
+<p>这玩意也用不着改，继续(改成英语，美国也可以)</p>
+<h1 id="下一步它会让你选择要不要连wifi，选择不要连，继续（图略）"><a href="#下一步它会让你选择要不要连wifi，选择不要连，继续（图略）" class="headerlink" title="下一步它会让你选择要不要连wifi，选择不要连，继续（图略）"></a>下一步它会让你选择要不要连wifi，选择不要连，继续（图略）</h1><p>更新和其他软件:选择最小安装，其它默认</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34FzQ.png" alt=""></p>
+<p>然后坐等几分钟:</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34No6.png" alt=""></p>
+<p>这一步卡住一段时间是正常的，数分钟后下一步:</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34PJS.png" alt=""></p>
+<h1 id="如果它说电脑上没有安装操作系统，就退出安装，回到“BIOS-设置”一步"><a href="#如果它说电脑上没有安装操作系统，就退出安装，回到“BIOS-设置”一步" class="headerlink" title="如果它说电脑上没有安装操作系统，就退出安装，回到“BIOS 设置”一步"></a>如果它说电脑上没有安装操作系统，就退出安装，回到“BIOS 设置”一步</h1><p>否则就选“其它选项”</p>
+<p>于是又过了一段时间</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34aFK.png" alt=""></p>
+<p>窗口左下角有一个<strong>加号</strong>，用于创建分区，选中在Windows里边分出的那一大块磁盘空间（至少50GB的，我分了75GB），点 +</p>
+<p>跳出来一个对话框</p>
+<h2 id="分swap"><a href="#分swap" class="headerlink" title="分swap"></a>分swap</h2><p>跳出对话框里，“用于”那栏的下拉菜单里选择“交换空间”，“大小”那一栏写自己物理内存的2倍（我4G的内存就写8192 <strong>MB</strong>，注意单位）,分区类型选主分区，空间起始位置 </p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34md0.png" alt=""></p>
+<p>点OK，等一会</p>
+<h2 id="分EFI（貌似Legacy启动可以跳过这一步）"><a href="#分EFI（貌似Legacy启动可以跳过这一步）" class="headerlink" title="分EFI（貌似Legacy启动可以跳过这一步）"></a>分EFI（貌似Legacy启动可以跳过这一步）</h2><p>选择那大块空间，再点“+” (为了让我少打些字，以后这两步不再详述)</p>
+<p>分区类型 逻辑分区，空间起始位置，用于EFI系统分区，大小500MB</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34eZq.png" alt=""></p>
+<h2 id="分Boot"><a href="#分Boot" class="headerlink" title="分Boot"></a>分Boot</h2><p>创建分区方法如上，逻辑分区，空间起始位置，EXT4日志文件系统，挂载点 <code>/boot</code>，(下拉菜单里选) 大小500MB</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34Ess.png" alt=""></p>
+<h2 id="分rootfs"><a href="#分rootfs" class="headerlink" title="分rootfs"></a>分rootfs</h2><p>创建分区方法如上，逻辑分区，空间起始位置，EXT4日志文件系统，挂载点 <code>/</code>，(下拉菜单里选) 大小10G~16G，我填了12G（12248MB）</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34GLR.png" alt=""></p>
+<h2 id="分home"><a href="#分home" class="headerlink" title="分home"></a>分home</h2><p>创建分区方法如上，逻辑分区，空间起始位置，EXT4日志文件系统，挂载点 <code>/home</code>，(下拉菜单里选) 大小…自定（至少20480MB，我的空间多就分了30720MB，这个目录的作用类似于’C:\Users’） </p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F348y9.png" alt=""></p>
+<h2 id="分usr"><a href="#分usr" class="headerlink" title="分usr"></a>分usr</h2><p>创建分区方法如上，逻辑分区，空间起始位置，EXT4日志文件系统，挂载点 <code>/usr</code>，(下拉菜单里选) 大小 剩下的都给它了（一般默认是占用全部空间的）</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34tdx.png" alt=""></p>
+<h2 id="设置引导（Legacy跳过）"><a href="#设置引导（Legacy跳过）" class="headerlink" title="设置引导（Legacy跳过）"></a>设置引导（Legacy跳过）</h2><p>下面安装启动引导器的设备:下拉选择刚刚分出来的EFI分区 (下拉菜单里显示设备名，你要让设备名和efi分区的设备名相同，如图，刚刚分出来EFI分区是/dev/sda10,下拉菜单里选择/dev/sda10)</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34noV.png" alt=""></p>
+<h2 id="确定"><a href="#确定" class="headerlink" title="确定"></a>确定</h2><p>第几分区可能不一样，只要看看是不是格式化了6个分区且6个分区的类型对得上就行了（注意 继续是右边的按钮）</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34MJU.png" alt=""></p>
+<p>如果有警报什么的产生，退出安装，Windows里删除刚刚分出来的分区，重来一遍</p>
+<p>一切正常就会进入选择地区，就选择上海，不用更改</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34QWF.png" alt=""></p>
+<p>再点继续，最后一步，填写用户名</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34KiT.png" alt=""></p>
+<p>我的写完了是这样</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34lz4.png" alt=""></p>
+<p>继续，开始安装</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F34VLn.png" alt=""></p>
+<p>坐等,最后</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F343QJ.png" alt=""></p>
+<h1 id="Finish-（先点继续试用，然后关机（关机键在右上角））"><a href="#Finish-（先点继续试用，然后关机（关机键在右上角））" class="headerlink" title="Finish!（先点继续试用，然后关机（关机键在右上角））"></a>Finish!（先点继续试用，然后关机（关机键在右上角））</h1><p><strong>关机后拔掉USB</strong></p>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>HP电脑还要在BIOS里改一下</p>
+<p>老样子进入BIOS的这个界面</p>
+<p><img src="https://s1.ax1x.com/2018/12/09/F8yNNQ.jpg" alt=""></p>
+<p>选中OS Boot Manager 回车</p>
+<p><img src="https://s1.ax1x.com/2018/12/09/F8ytAg.jpg" alt=""></p>
+<p>选中ubuntu，f5挪到Windows Boot Manager上面</p>
+<p><img src="https://s1.ax1x.com/2018/12/09/F8yJHS.jpg" alt=""></p>
+<p>按f10退出这个界面，再按一次f10保存</p>
+<h1 id="OK"><a href="#OK" class="headerlink" title="OK!"></a>OK!</h1><h1 id="text-color-red-补充"><a href="#text-color-red-补充" class="headerlink" title="$\text{\color{red}补充}$"></a>$\text{\color{red}补充}$</h1><h1 id="删除双系统（以删除Ubuntu为例）："><a href="#删除双系统（以删除Ubuntu为例）：" class="headerlink" title="删除双系统（以删除Ubuntu为例）："></a>删除双系统（以删除Ubuntu为例）：</h1><p>参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/pualus/p/7835422.html">这个链接</a></p>
+<p>（虽然在我的电脑上直接KO掉Ubuntu的磁盘也不会出事（BIOS比较智能？））</p>
+<p>保险起见，还是先把启动项删了:</p>
+<p>管理员身份启动cmd，输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit &#x2F;enum ALL</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3DxQf.png" alt="del_os1"></p>
+<p>（device和path被我涂掉了，标识符也被涂掉了一部分）</p>
+<p>有一个 description 类似或接近ubuntu的（高亮）</p>
+<p>把它的标识符一栏(那个{0e …… 963}的东西)连着括号一起复制下来</p>
+<p>在cmd中输入（不要按回车）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit &#x2F;delete</span><br></pre></td></tr></table></figure>
+<p>敲一个空格，然后粘贴你刚刚复制的标识符，按回车</p>
+<p><img src="https://s1.ax1x.com/2018/12/08/F3DvSP.png" alt="del_os2"></p>
+<p>操作成功完成后，（我的电脑）就可以删除Ubuntu的磁盘空间啦！</p>
+<p>（别的电脑我不知道行不行，最好还是用上面那个链接的方法）</p>
+<h1 id="祝大家成功地装上一个真正的Ubuntu"><a href="#祝大家成功地装上一个真正的Ubuntu" class="headerlink" title="祝大家成功地装上一个真正的Ubuntu"></a>祝大家成功地装上一个真正的Ubuntu</h1></section>
+    
+    <span id="/blog/lgrb-multi-os-install-ubuntu/" class="leancloud_visitors" data-flag-title="【转载】运行linux的第四种方式：双系统">
+    <em class="post-meta-item-text">阅读量 </em>
+    <i class="leancloud-visitors-count">加载中</i>
+    </span>
+    
+    <!-- Tags START -->
+    
+      <div class="tags">
+        <span>标签:</span>
+        
+  <a href="/tags#洛谷日报" >
+    <span class="tag-code">洛谷日报</span>
+  </a>
+
+      </div>
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/blog/lgrb-typora-yi-kuan-jian-jie-di-markdown-bian-ji-qi/">
+        <span class="nav-arrow">← </span>
+        
+          【转载】Typora ---一款简洁的Markdown编辑器
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/blog/About-Ubuntu/">
+        
+          Ubuntu使用心得
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+      <div class="money-like">
+        <div class="reward-btn">
+          赏
+          <span class="money-code">
+            <span class="alipay-code">
+              <div class="code-image"></div>
+              <b>使用支付宝打赏</b>
+            </span>
+            <span class="wechat-code">
+              <div class="code-image"></div>
+              <b>使用微信打赏</b>
+            </span>
+          </span>
+        </div>
+        <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+      </div>
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+      <div class="qrcode">
+        <canvas id="share-qrcode"></canvas>
+        <p class="notice">扫描二维码，分享此文章</p>
+      </div>
+    
+    <!-- 二维码 END -->
+    
+      <!-- No Comment -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">目录</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%BF%90%E8%A1%8Clinux%E7%9A%84%E7%AC%AC%E5%9B%9B%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A%E5%8F%8C%E7%B3%BB%E7%BB%9F"><span class="toc-nav-text">运行linux的第四种方式：双系统</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%8F%8C%E7%B3%BB%E7%BB%9F"><span class="toc-nav-text">双系统</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#color-red-Warning"><span class="toc-nav-text">$\color{red}{Warning}$</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#text-color-red-%E8%BF%99%E7%A7%8D%E6%96%B9%E6%B3%95%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%8D%9F%E5%9D%8F%E6%82%A8%E7%9A%84%E7%94%B5%E8%84%91%EF%BC%8C%E8%AF%B7%E8%B0%A8%E6%85%8E%E5%B0%9D%E8%AF%95"><span class="toc-nav-text">$\text{\color{red}这种方法可能会损坏您的电脑，请谨慎尝试}$</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#1-%E5%87%86%E5%A4%87"><span class="toc-nav-text">1. 准备</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#2-%E4%B8%8B%E8%BD%BD"><span class="toc-nav-text">2. 下载</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%B8%80%E5%AE%9A%E8%A6%81%E7%A1%AE%E4%BF%9DU%E7%9B%98%E8%A2%AB%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%94%E9%87%8C%E9%9D%A2%E7%9A%84%E6%95%B0%E6%8D%AE%E9%83%BD%E5%B7%B2%E4%BF%9D%E5%AD%98"><span class="toc-nav-text">一定要确保U盘被格式化且里面的数据都已保存!!!</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%8C%E6%88%90%E5%90%8E%E7%82%B9%E7%BB%88%E6%AD%A2%EF%BC%8C%E7%84%B6%E5%90%8E%E6%82%A8%E7%9A%84U%E7%9B%98%E5%B0%B1%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E5%87%86%E7%9A%84Ubuntu-18-04-1-LTS-%E5%AE%89%E8%A3%85U%E7%9B%98%E4%BA%86%EF%BC%81"><span class="toc-nav-text">完成后点终止，然后您的U盘就是一个标准的Ubuntu 18.04.1 LTS 安装U盘了！</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#3-%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA"><span class="toc-nav-text">3. 硬盘分区</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#4-BIOS%E8%AE%BE%E7%BD%AE"><span class="toc-nav-text">4. BIOS设置</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%89%BE%E5%88%B0%E2%80%9DSecure-boot%E2%80%9D-%E5%AE%89%E5%85%A8%E5%90%AF%E5%8A%A8%EF%BC%8C%E5%85%B3%E6%8E%89%E5%AE%83"><span class="toc-nav-text">找到”Secure boot”(安全启动，关掉它)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%8A%8AUSB-Diskette-on-Key-USB-Hard-Disk-%E6%8C%AA%E5%88%B0%E6%9C%80%E4%B8%8A%E9%9D%A2%EF%BC%88uefi%E5%90%AF%E5%8A%A8%E6%8C%AAUEFI-Boot-Order%E4%B8%8B%E7%9A%84%EF%BC%8CLegacy%E5%90%AF%E5%8A%A8%E6%8A%8AUEFI%E5%92%8CLegacy%E7%9A%84%E9%83%BD%E6%8C%AA%E4%B8%80%E4%B8%8B%EF%BC%8C%E7%94%A8f5-f6%E6%8C%AA%E5%8A%A8%EF%BC%89"><span class="toc-nav-text">把USB Diskette on Key&#x2F;USB Hard Disk 挪到最上面（uefi启动挪UEFI Boot Order下的，Legacy启动把UEFI和Legacy的都挪一下，用f5,f6挪动）</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#5-%E5%AE%89%E8%A3%85"><span class="toc-nav-text">5. 安装</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%AE%83%E4%BC%9A%E8%AE%A9%E4%BD%A0%E9%80%89%E6%8B%A9%E8%A6%81%E4%B8%8D%E8%A6%81%E8%BF%9Ewifi%EF%BC%8C%E9%80%89%E6%8B%A9%E4%B8%8D%E8%A6%81%E8%BF%9E%EF%BC%8C%E7%BB%A7%E7%BB%AD%EF%BC%88%E5%9B%BE%E7%95%A5%EF%BC%89"><span class="toc-nav-text">下一步它会让你选择要不要连wifi，选择不要连，继续（图略）</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%A6%82%E6%9E%9C%E5%AE%83%E8%AF%B4%E7%94%B5%E8%84%91%E4%B8%8A%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%8C%E5%B0%B1%E9%80%80%E5%87%BA%E5%AE%89%E8%A3%85%EF%BC%8C%E5%9B%9E%E5%88%B0%E2%80%9CBIOS-%E8%AE%BE%E7%BD%AE%E2%80%9D%E4%B8%80%E6%AD%A5"><span class="toc-nav-text">如果它说电脑上没有安装操作系统，就退出安装，回到“BIOS 设置”一步</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%86swap"><span class="toc-nav-text">分swap</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%86EFI%EF%BC%88%E8%B2%8C%E4%BC%BCLegacy%E5%90%AF%E5%8A%A8%E5%8F%AF%E4%BB%A5%E8%B7%B3%E8%BF%87%E8%BF%99%E4%B8%80%E6%AD%A5%EF%BC%89"><span class="toc-nav-text">分EFI（貌似Legacy启动可以跳过这一步）</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%86Boot"><span class="toc-nav-text">分Boot</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%86rootfs"><span class="toc-nav-text">分rootfs</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%86home"><span class="toc-nav-text">分home</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%86usr"><span class="toc-nav-text">分usr</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%BC%95%E5%AF%BC%EF%BC%88Legacy%E8%B7%B3%E8%BF%87%EF%BC%89"><span class="toc-nav-text">设置引导（Legacy跳过）</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%A1%AE%E5%AE%9A"><span class="toc-nav-text">确定</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Finish-%EF%BC%88%E5%85%88%E7%82%B9%E7%BB%A7%E7%BB%AD%E8%AF%95%E7%94%A8%EF%BC%8C%E7%84%B6%E5%90%8E%E5%85%B3%E6%9C%BA%EF%BC%88%E5%85%B3%E6%9C%BA%E9%94%AE%E5%9C%A8%E5%8F%B3%E4%B8%8A%E8%A7%92%EF%BC%89%EF%BC%89"><span class="toc-nav-text">Finish!（先点继续试用，然后关机（关机键在右上角））</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-nav-text">补充</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#OK"><span class="toc-nav-text">OK!</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#text-color-red-%E8%A1%A5%E5%85%85"><span class="toc-nav-text">$\text{\color{red}补充}$</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%88%A0%E9%99%A4%E5%8F%8C%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%BB%A5%E5%88%A0%E9%99%A4Ubuntu%E4%B8%BA%E4%BE%8B%EF%BC%89%EF%BC%9A"><span class="toc-nav-text">删除双系统（以删除Ubuntu为例）：</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E7%A5%9D%E5%A4%A7%E5%AE%B6%E6%88%90%E5%8A%9F%E5%9C%B0%E8%A3%85%E4%B8%8A%E4%B8%80%E4%B8%AA%E7%9C%9F%E6%AD%A3%E7%9A%84Ubuntu"><span class="toc-nav-text">祝大家成功地装上一个真正的Ubuntu</span></a></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'https://www.zhangkai.xin/blog/lgrb-multi-os-install-ubuntu/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+        
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+  })();
+</script>
+
+<script>
+    // valine
+    new Valine({
+        av: AV,
+        el: "#vcomments",
+        appId: "0vALLh7GKtH9dG12UwlGy3kw-MdYXbMMI",
+        appKey: "IQf6OTVzOL16tXuKqoKpSAss",
+        placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+        visitor: "true",
+        recordIP: "true"
+    })
+    
+</script>
+
+<script>
+    // gitment
+    var gitmentConfig = "";
+    if (gitmentConfig !== 'undefined') {
+      var gitment = new Gitment({
+        id: "【转载】运行linux的第四种方式：双系统",
+        owner: "",
+        repo: "",
+        oauth: {
+          client_id: "",
+          client_secret: ""
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+</script>
+
+<script>
+  var disqus_shortname = '';
+  
+  var disqus_url = 'https://www.zhangkai.xin/blog/lgrb-multi-os-install-ubuntu/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2018 - 2020 WilliamPeterMatthew | 使用了 <a href="https://hexo.io" target="_blank">Hexo</a> 生成
+    <br>
+    主题作者为 <a target="_blank" rel="noopener" href="https://github.com/yanm1ng">yanm1ng</a> | 经过 <a target="_blank" rel="noopener" href="https://github.com/WilliamPeterMatthew">WilliamPeterMatthew</a> 修改
+    <br>
+	<a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener nofollow"><img src="/pic/beian/icp备案.png" width="18" height="18"> 豫ICP备20022692号-1</a> | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=XXXXXXXXXXXXXX" target="_blank" rel="noopener nofollow"><img src="/pic/beian/公安备案.png" width="18" height="18"> 豫公网安备XXXXXXXXXXXXXX号</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+
+<script src="/js/script.js"></script>
+
+  </body>
+</html>
