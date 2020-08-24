@@ -3,8 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Peter_Matthew的博客 | 我有昕想法
-subtitle: A Konjac in Province H.A.'s Blog | I have Xin ideas.
+title: 我有昕想法 | Peter_Matthew的博客
+titles: Peter_Matthew的博客
+subtitle: I have Xin ideas. | A Konjac in Province H.A.'s Blog
+subtitles: A Konjac in Province H.A.'s Blog
 description: A Blog About Information and Technology
 keywords: Information Technology
 author: William Peter Matthew
